@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Cart from './components/Cart/Cart';
 import { BrowserRouter as Router,  Switch,  Route} from "react-router-dom";
+import FoodDetails from './components/FoodDetails/FoodDetails';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/cart">
             <Cart />
+          </Route>
+          <Route path="/food/details">
+            <FoodDetails />
           </Route>
         </Switch>
       </div>
