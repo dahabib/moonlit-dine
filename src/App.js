@@ -1,11 +1,11 @@
-import './App.css';
+import "./App.css";
 import React from "react";
-import Header from './components/Header/Header';
-import Home from './components/Home/Home';
-import Login from './components/Login/Login';
-import Cart from './components/Cart/Cart';
-import { BrowserRouter as Router,  Switch,  Route} from "react-router-dom";
-import FoodDetails from './components/FoodDetails/FoodDetails';
+import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
+import Cart from "./components/Cart/Cart";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import FoodDetails from "./components/FoodDetails/FoodDetails";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <Route path="/cart">
             <Cart />
           </Route>
-          <Route path="/food/details">
+          <Route path="/food/details/:id">
             <FoodDetails />
           </Route>
         </Switch>
